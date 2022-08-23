@@ -38,5 +38,6 @@ while [ $row -lt $height ] && [ $col -lt $width ]; do
     ((col+=1))
 done
 
+# moving cursor to the original/normal position
 echo -en "\033[$(($height/2))B\033[$(($width/2))C"
 printf "\n"
