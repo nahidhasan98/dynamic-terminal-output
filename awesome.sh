@@ -48,10 +48,10 @@ for ((i=0;i<$lenInitText;i++)); do
     sleep 0.1
 done
 
-sleep 1
+sleep 0.5
 for ((i=0;i<3;i++)); do
     echo -en "\033[1D"
-    sleep 0.6
+    sleep 0.2
 done
 # above for loop is exactly equal to this - 'echo -en "\033[3D"'
 # but using for loop for better displaying
@@ -63,10 +63,10 @@ for ((i=0;i<$lenInsertText;i++)); do
     sleep 0.09
 done
 
-sleep 1
+sleep 0.5
 for ((i=0;i<4;i++)); do
     echo -en "\033[1C"
-    sleep 0.6
+    sleep 0.2
 done
 # above for loop is exactly equal to this - 'echo -en "\033[4C"'
 # but using for loop for better displaying
